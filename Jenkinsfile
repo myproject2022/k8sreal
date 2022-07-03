@@ -28,7 +28,7 @@ node {
     }
     
     stage('Trigger ManifestUpdate') {
-                echo "triggering updatemanifestjob"
+                echo "triggering k8smanifast"
                 build job: 'k8smanifast', parameters: [string(name: 'DOCKERTAG', value: env.BUILD_NUMBER)]
         }
 }
